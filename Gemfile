@@ -10,6 +10,7 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'stripe'
 gem 'jquery-rails'
+gem 'spring-commands-rspec'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -45,6 +46,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
   gem 'dotenv-rails'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :development do
