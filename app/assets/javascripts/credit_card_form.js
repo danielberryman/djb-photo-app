@@ -10,7 +10,7 @@ $(document).on('ready turbolinks:load', function(){
 	  var $form = $(event.target);
 	  $form.find("input[type=submit]").prop("disabled", true);
 
-//If Stripe was initialized correctly this will create a token using the credit card info
+	//If Stripe was initialized correctly this will create a token using the credit card info
 
 	  if(Stripe){
 		Stripe.card.createToken($form, stripeResponseHandler);
