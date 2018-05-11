@@ -48,7 +48,7 @@
                   data: { stripe: "exp-year"}, required: true %>
               
             </div>
-            <input type=”hidden” name=”stripeToken”/>
+            <%= p.hidden_field :name => "stripeToken" %>
           </div>
         </div>
       <% end %>
